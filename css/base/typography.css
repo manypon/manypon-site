@@ -1,0 +1,23 @@
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+}
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+}
+.accent {
+  background: linear-gradient(100deg, #a78bfa 10%, #6c5cf7 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  color: var(--text-muted);
+  line-height: 1.5;
+  text-wrap: balance;
+}

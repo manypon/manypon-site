@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>manypon — Fullstack Developer</title>
+  <meta name="description" content="Portfolio of manypon — fullstack developer building fast, beautiful and usable products.">
+  <meta name="theme-color" content="#08060f">
+  <link rel="icon" href="assets/brand/manypon-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/bg-workspace.webp" as="image">
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages/projects.css">
+  <script src="js/core/nav.js" defer></script>
+  <script src="js/core/reveal.js" defer></script>
+  <script src="js/core/parallax.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><div class="backdrop__img"></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="nav__brand" href="index.html" aria-label="manypon — home">
+      <img src="assets/brand/manypon-mark.svg" alt="" width="34" height="34">
+      <span>manypon</span>
+    </a>
+    <nav class="nav__menu" id="nav-menu" aria-label="Main" data-nav-menu>
+      <a class="nav__link is-active" href="index.html" aria-current="page">Projects</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link" href="skills.html">Skills</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn--ghost btn--sm nav__cta" href="contact.html">
+      <span class="status-dot" aria-hidden="true"></span>
+      Let's talk
+      <img class="icon-arrow" src="assets/icons/arrow-up-right.svg" alt="" width="16" height="16">
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__content">
+        <h1 class="hero__title" id="hero-title" data-enter style="--i:0">
+          <span>Fullstack</span>
+          <span class="accent">Developer</span>
+        </h1>
+        <p class="lead" data-enter style="--i:1">I turn ideas into fast, beautiful and usable products.</p>
+        <div class="hero__rule" data-enter style="--i:2" aria-hidden="true"></div>
+        <ul class="hero__facts">
+          <li class="fact" data-enter style="--i:3"><img src="assets/icons/location.svg" alt="">Svobodny, Russia</li>
+          <li class="fact" data-enter style="--i:4"><img src="assets/icons/code.svg" alt="">3+ years experience</li>
+          <li class="fact" data-enter style="--i:5"><img src="assets/icons/laptop.svg" alt="">React • Electron • Node.js</li>
+        </ul>
+        <a class="btn btn--primary" href="#projects" data-enter style="--i:6">
+          View my projects
+          <img class="icon-arrow" src="assets/icons/arrow-up-right.svg" alt="" width="16" height="16">
+        </a>
+        <ul class="hero__stack" aria-label="Main tools" data-enter style="--i:7">
+          <li class="icon-tile" title="React"><img src="assets/tech/color/react.svg" alt="React"></li>
+          <li class="icon-tile" title="Electron"><img src="assets/tech/color/electron.svg" alt="Electron"></li>
+          <li class="icon-tile" title="Node.js"><img src="assets/tech/color/nodejs.svg" alt="Node.js"></li>
+          <li class="icon-tile" title="GitHub"><img src="assets/tech/color/github.svg" alt="GitHub"></li>
+          <li class="icon-tile" title="Figma"><img src="assets/tech/color/figma.svg" alt="Figma"></li>
+          <li class="icon-tile" title="VS Code"><img src="assets/tech/color/vscode.svg" alt="VS Code"></li>
+        </ul>
+      </div>
+
+      <aside class="stack-card glass" aria-labelledby="stack-title" data-enter style="--i:8">
+        <h2 class="stack-card__title" id="stack-title"><img src="assets/icons/bars.svg" alt="">My stack:</h2>
+        <ul class="stack-card__list">
+          <li>React / Next.js</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>Electron</li>
+          <li>Tailwind CSS</li>
+          <li>PostgreSQL</li>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>Linux</li>
+          <li>and more...</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="chip">Selected work</span>
+          <h2 id="projects-title">My <span class="accent">Projects</span></h2>
+          <p class="lead">Apps I designed, built and shipped on my own.</p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card glass reveal">
+            <div class="project-card__cover project-card__cover--games">
+              <span class="project-card__badge">Desktop app</span>
+              <img src="assets/icons/gamepad.svg" alt="">
+            </div>
+            <div class="project-card__body">
+              <h3>ManyGameLib</h3>
+              <p>A local game library for Windows. Add a game once and launch it from one place, with grid and list views, search, favorites and a customizable banner for every game.</p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li class="tag">Electron</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">Windows</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="btn btn--ghost btn--sm" href="https://github.com/manypon/ManyGameLib" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/tech/color/github.svg" alt="">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-card__cover project-card__cover--weather">
+              <span class="project-card__badge">Web app</span>
+              <img src="assets/icons/cloud.svg" alt="">
+            </div>
+            <div class="project-card__body">
+              <h3>manyweather</h3>
+              <p>A weather web app built with vanilla HTML, CSS and JavaScript and deployed on Vercel.</p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">Vercel</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="btn btn--primary btn--sm" href="https://manyweather.vercel.app" target="_blank" rel="noopener noreferrer">
+                  Live demo
+                  <img class="icon-arrow" src="assets/icons/arrow-up-right.svg" alt="" width="16" height="16">
+                </a>
+                <a class="btn btn--ghost btn--sm" href="https://github.com/manypon/manyweather" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/tech/color/github.svg" alt="">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 manypon</span>
+      <span>Built with vanilla HTML, CSS and JS</span>
+    </div>
+  </footer>
+</body>
+</html>
