@@ -1,0 +1,14 @@
+{
+  "name": "manypon-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "set-password": "node scripts/set-password.js",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.9.0"
+  }
+}
