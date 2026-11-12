@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — manypon</title>
+  <meta name="description" content="About manypon — fullstack developer from Russia.">
+  <meta name="theme-color" content="#08060f">
+  <link rel="icon" href="assets/brand/manypon-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/bg-tokyo.webp" as="image">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages/about.css">
+  <script src="js/core/nav.js" defer></script>
+  <script src="js/core/reveal.js" defer></script>
+  <script src="js/core/parallax.js" defer></script>
+  <script src="js/pages/terminal.js" defer></script>
+</head>
+<body>
+  <div class="backdrop backdrop--tokyo" aria-hidden="true"><div class="backdrop__img"></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="nav__brand" href="index.html" aria-label="manypon — home">
+      <img src="assets/brand/manypon-mark.svg" alt="" width="34" height="34">
+      <span>manypon</span>
+    </a>
+    <nav class="nav__menu" id="nav-menu" aria-label="Main" data-nav-menu>
+      <a class="nav__link" href="index.html">Projects</a>
+      <a class="nav__link is-active" href="about.html" aria-current="page">About</a>
+      <a class="nav__link" href="skills.html">Skills</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn--ghost btn--sm nav__cta" href="contact.html">
+      <span class="status-dot" aria-hidden="true"></span>
+      Let's talk
+      <img class="icon-arrow" src="assets/icons/arrow-up-right.svg" alt="" width="16" height="16">
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="about container" aria-labelledby="about-title">
+      <div class="about__intro">
+        <div class="about__text">
+          <span class="chip" data-enter style="--i:0">About me</span>
+          <h1 id="about-title" data-enter style="--i:1">Hi, I’m <span class="accent">manypon</span></h1>
+          <p class="about__role" data-enter style="--i:2"><strong>Fullstack Developer</strong> from Russia</p>
+          <p class="lead" data-enter style="--i:3">I’m a passionate developer who loves creating modern, beautiful and useful applications. I enjoy working with web technologies, games and bringing creative ideas to life through code.</p>
+          <ul class="about__traits" data-enter style="--i:4">
+            <li class="trait"><img src="assets/icons/code.svg" alt="">Clean Code</li>
+            <li class="trait"><img src="assets/icons/bolt.svg" alt="">Performance</li>
+            <li class="trait"><img src="assets/icons/gem.svg" alt="">Creative Mind</li>
+          </ul>
+        </div>
+
+        <div class="terminal-wrap" data-enter style="--i:3">
+        <div class="terminal" role="img" aria-label="Terminal window: the command whoami prints manypon">
+          <div class="terminal__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="terminal__body" aria-hidden="true">
+            <p><span class="terminal__user">manypon@dev</span>:~$ <span data-typed>whoami</span></p>
+            <p class="terminal__out" data-after>manypon</p>
+            <p data-after><span class="terminal__user">manypon@dev</span>:~$ <span class="terminal__caret"></span></p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <ul class="stats glass reveal" aria-label="Quick facts">
+        <li class="stat"><img src="assets/icons/laptop.svg" alt=""><div><strong>3+</strong><span>Years of Experience</span></div></li>
+        <li class="stat"><img src="assets/icons/folder.svg" alt=""><div><strong>15+</strong><span>Projects Completed</span></div></li>
+        <li class="stat"><img src="assets/icons/file.svg" alt=""><div><strong>5+</strong><span>Repositories on GitHub</span></div></li>
+        <li class="stat"><img src="assets/icons/gamepad.svg" alt=""><div><strong>∞</strong><span>Gaming Enthusiast</span></div></li>
+      </ul>
+
+      <div class="about__cards">
+        <article class="glass interests reveal">
+          <img class="interests__img" src="assets/img/bg-workspace.webp" alt="" loading="lazy">
+          <div class="interests__content">
+            <span class="chip">My Interests</span>
+            <h2>More than just code</h2>
+            <p>I love games, technology, and everything related to computers. In my free time I enjoy playing, exploring new tools and improving my skills.</p>
+            <ul class="interests__tags">
+              <li class="trait"><img src="assets/icons/gamepad.svg" alt="">Gaming</li>
+              <li class="trait"><img src="assets/icons/laptop.svg" alt="">Tech</li>
+              <li class="trait"><img src="assets/icons/music.svg" alt="">Music</li>
+              <li class="trait"><img src="assets/icons/film.svg" alt="">Movies</li>
+              <li class="trait"><img src="assets/icons/plus.svg" alt="">More</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass journey reveal">
+          <span class="chip">My Journey</span>
+          <h2>A bit about my path</h2>
+          <ol class="timeline">
+            <li><time>2023 – Present</time><p>Fullstack Developer, working on web applications and personal projects</p></li>
+            <li><time>2022 – 2023</time><p>Started my journey in development</p></li>
+            <li><time>Before</time><p>Just a guy who loved computers :)</p></li>
+          </ol>
+        </article>
+
+        <article class="glass thanks reveal">
+          <div class="thanks__cat" aria-hidden="true">
+            <span class="z z--1">Z</span><span class="z z--2">Z</span><span class="z z--3">Z</span>
+            <svg viewBox="0 0 160 100" fill="none" stroke="#8b5cf6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M28 88c-12-2-18-12-14-24 5-13 20-20 40-20 22 0 38 7 44 20 5 11-1 21-14 24z" fill="#0d0a18"/>
+              <path d="M112 84c20 2 32-6 30-18-1-8-8-10-12-6" />
+              <path d="M44 56c-3-15 5-28 20-30l2-12 11 8c5-1 9-1 14 0l11-8 2 12c14 3 22 15 19 30" fill="#0d0a18" transform="translate(-30 4) scale(.9)"/>
+              <path d="M38 48q5 5 10 0M58 48q5 5 10 0M51 53l2 2 2-2z"/>
+            </svg>
+          </div>
+          <p>Thanks for visiting! <img class="thanks__heart" src="assets/icons/heart.svg" alt=""></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 manypon</span>
+      <span>Built with vanilla HTML, CSS and JS</span>
+    </div>
+  </footer>
+</body>
+</html>

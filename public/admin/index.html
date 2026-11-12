@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin — manypon</title>
+  <link rel="icon" href="/assets/brand/manypon-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/admin/css/admin.css">
+  <script src="/admin/js/admin.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><div class="backdrop__img"></div></div>
+
+  <main class="admin">
+    <section class="admin-login glass" id="login-view" hidden aria-labelledby="login-title">
+      <img src="/assets/brand/manypon-mark.svg" alt="" width="44" height="44">
+      <h1 id="login-title">Admin</h1>
+      <form id="login-form" novalidate>
+        <label class="visually-hidden" for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" maxlength="256" required>
+        <button class="btn btn--primary" type="submit">Sign in</button>
+        <p class="admin__status" id="login-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="admin-inbox" id="inbox-view" hidden aria-labelledby="inbox-title">
+      <header class="admin-inbox__head">
+        <div>
+          <h1 id="inbox-title">Messages</h1>
+          <p class="admin__meta" id="inbox-meta"></p>
+        </div>
+        <div class="admin-inbox__actions">
+          <button class="btn btn--ghost btn--sm" type="button" id="refresh">Refresh</button>
+          <button class="btn btn--ghost btn--sm" type="button" id="logout">Sign out</button>
+        </div>
+      </header>
+      <p class="admin__status" id="inbox-status" role="status" aria-live="polite"></p>
+      <ul class="admin-list" id="message-list"></ul>
+      <p class="admin-empty" id="empty" hidden>No messages yet.</p>
+    </section>
+  </main>
+</body>
+</html>

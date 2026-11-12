@@ -1,0 +1,24 @@
+:root {
+  --bg: #08060f;
+  --surface: rgba(20, 15, 34, 0.62);
+  --border: rgba(139, 92, 246, 0.22);
+  --border-strong: rgba(167, 139, 250, 0.5);
+  --line: rgba(255, 255, 255, 0.08);
+  --accent: #8b5cf6;
+  --accent-bright: #a78bfa;
+  --primary: #6c5cf7;
+  --primary-glow: rgba(108, 92, 247, 0.5);
+  --text: #f5f3ff;
+  --text-muted: #a9a4c9;
+  --success: #22c55e;
+  --font-display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+  --container: 1400px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --nav-h: 84px;
+  --ease: cubic-bezier(0.22, 0.8, 0.2, 1);
+}

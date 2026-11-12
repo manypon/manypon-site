@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills — manypon</title>
+  <meta name="description" content="Technologies and tools manypon works with.">
+  <meta name="theme-color" content="#08060f">
+  <link rel="icon" href="assets/brand/manypon-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/bg-workspace.webp" as="image">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages/skills.css">
+  <script src="js/core/nav.js" defer></script>
+  <script src="js/core/reveal.js" defer></script>
+  <script src="js/core/parallax.js" defer></script>
+  <script src="js/pages/skill-bars.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><div class="backdrop__img"></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="nav__brand" href="index.html" aria-label="manypon — home">
+      <img src="assets/brand/manypon-mark.svg" alt="" width="34" height="34">
+      <span>manypon</span>
+    </a>
+    <nav class="nav__menu" id="nav-menu" aria-label="Main" data-nav-menu>
+      <a class="nav__link" href="index.html">Projects</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link is-active" href="skills.html" aria-current="page">Skills</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn--ghost btn--sm nav__cta" href="contact.html">
+      <span class="status-dot" aria-hidden="true"></span>
+      Let's talk
+      <img class="icon-arrow" src="assets/icons/arrow-up-right.svg" alt="" width="16" height="16">
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu" data-nav-toggle>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="skills container" aria-labelledby="skills-title">
+      <div class="skills__head">
+        <span class="chip" data-enter style="--i:0">My Skills</span>
+        <h1 id="skills-title" data-enter style="--i:1">My <span class="accent">Skills</span></h1>
+        <p class="skills__sub" data-enter style="--i:2">Technologies I work with</p>
+        <p class="lead" data-enter style="--i:3">A combination of modern tools and constant self-development allows me to create fast, scalable and beautiful products.</p>
+        <div class="skills__rule" data-enter style="--i:4" aria-hidden="true"></div>
+      </div>
+
+      <ul class="areas" data-enter style="--i:5">
+        <li class="area glass"><img src="assets/icons/code.svg" alt=""><div><h2>Development</h2><p>Frontend &amp; Backend technologies</p></div></li>
+        <li class="area glass"><img src="assets/icons/brush.svg" alt=""><div><h2>Design</h2><p>UI/UX, visual design and creativity</p></div></li>
+        <li class="area glass"><img src="assets/icons/bolt.svg" alt=""><div><h2>Tools</h2><p>Tools that help me work faster</p></div></li>
+        <li class="area glass"><img src="assets/icons/gamepad.svg" alt=""><div><h2>Gaming</h2><p>Game development and related stuff</p></div></li>
+      </ul>
+
+      <div class="skills__panels">
+        <section class="glass panel reveal" aria-labelledby="levels-title">
+          <h2 class="panel__title" id="levels-title">Tech Skills</h2>
+          <ul class="levels">
+            <li class="level" style="--level:.95"><span>TypeScript / JavaScript</span><div class="level__track" role="img" aria-label="95 percent"><div class="level__fill"></div></div><b>95%</b></li>
+            <li class="level" style="--level:.93"><span>React / Next.js</span><div class="level__track" role="img" aria-label="93 percent"><div class="level__fill"></div></div><b>93%</b></li>
+            <li class="level" style="--level:.87"><span>Node.js</span><div class="level__track" role="img" aria-label="87 percent"><div class="level__fill"></div></div><b>87%</b></li>
+            <li class="level" style="--level:.7"><span>Python</span><div class="level__track" role="img" aria-label="70 percent"><div class="level__fill"></div></div><b>70%</b></li>
+            <li class="level" style="--level:.82"><span>UI/UX Design</span><div class="level__track" role="img" aria-label="82 percent"><div class="level__fill"></div></div><b>82%</b></li>
+            <li class="level" style="--level:.9"><span>Git &amp; GitHub</span><div class="level__track" role="img" aria-label="90 percent"><div class="level__fill"></div></div><b>90%</b></li>
+          </ul>
+        </section>
+
+        <section class="glass panel reveal" aria-labelledby="stack-grid-title">
+          <h2 class="panel__title" id="stack-grid-title">Tech Stack</h2>
+          <ul class="stack-grid">
+            <li class="icon-tile" title="React"><img src="assets/tech/react.svg" alt="React"></li>
+            <li class="icon-tile" title="Next.js"><img src="assets/tech/nextjs.svg" alt="Next.js"></li>
+            <li class="icon-tile" title="Node.js"><img src="assets/tech/nodejs.svg" alt="Node.js"></li>
+            <li class="icon-tile" title="Python"><img src="assets/tech/python.svg" alt="Python"></li>
+            <li class="icon-tile" title="GitHub"><img src="assets/tech/github.svg" alt="GitHub"></li>
+            <li class="icon-tile" title="Figma"><img src="assets/tech/figma.svg" alt="Figma"></li>
+            <li class="icon-tile" title="VS Code"><img src="assets/tech/vscode.svg" alt="VS Code"></li>
+            <li class="icon-tile" title="Docker"><img src="assets/tech/docker.svg" alt="Docker"></li>
+            <li class="icon-tile" title="Linux"><img src="assets/tech/linux.svg" alt="Linux"></li>
+            <li class="icon-tile" title="MongoDB"><img src="assets/tech/mongodb.svg" alt="MongoDB"></li>
+            <li class="icon-tile" title="PostgreSQL"><img src="assets/tech/postgresql.svg" alt="PostgreSQL"></li>
+            <li class="icon-tile" title="TypeScript"><img src="assets/tech/typescript.svg" alt="TypeScript"></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 manypon</span>
+      <span>Built with vanilla HTML, CSS and JS</span>
+    </div>
+  </footer>
+</body>
+</html>
