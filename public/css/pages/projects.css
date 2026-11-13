@@ -104,27 +104,57 @@
   place-items: center;
   overflow: hidden;
 }
-.project-card__cover--phone {
-  background:
-    radial-gradient(110% 90% at 80% 6%, rgba(99, 102, 241, 0.55), transparent 62%),
-    radial-gradient(90% 80% at 6% 100%, rgba(56, 189, 248, 0.25), transparent 60%),
-    #0f0c24;
-}
 .project-card__shot {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
-.project-card__cover--phone .project-card__shot {
+@keyframes float-letter {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10px, 0); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.project-card__cover--letter {
+  background:
+    radial-gradient(70% 90% at 50% 45%, rgba(108, 92, 247, 0.5), transparent 70%),
+    radial-gradient(90% 70% at 100% 100%, rgba(236, 72, 153, 0.18), transparent 60%),
+    #0f0b20;
+}
+.project-card__cover--letter::before {
+  content: "";
   position: absolute;
-  top: 26px;
+  inset: 0;
+  background-image: radial-gradient(rgba(167, 139, 250, 0.32) 1px, transparent 1.5px);
+  background-size: 20px 20px;
+  -webkit-mask-image: radial-gradient(60% 75% at 50% 50%, #000, transparent 85%);
+  mask-image: radial-gradient(60% 75% at 50% 50%, #000, transparent 85%);
+}
+.project-card__cover--letter::after {
+  content: "";
+  position: absolute;
+  top: 50%;
   left: 50%;
-  width: 46%;
-  height: auto;
-  border-radius: 22px 22px 0 0;
-  box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.3), 0 20px 50px -10px rgba(0, 0, 0, 0.7);
-  transform: translateX(-50%);
+  width: 62%;
+  aspect-ratio: 1;
+  margin: calc(-31% - 0px) 0 0 -31%;
+  border-radius: 50%;
+  border: 1px dashed rgba(167, 139, 250, 0.35);
+  animation: spin 48s linear infinite;
+}
+.project-card__letter {
+  position: relative;
+  z-index: 1;
+  font: 800 clamp(7rem, 15vw, 9.5rem) / 1 var(--font-display);
+  letter-spacing: -0.04em;
+  background: linear-gradient(160deg, #f1ecff 0%, #a78bfa 48%, #6c5cf7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.65));
+  animation: float-letter 6s ease-in-out infinite;
 }
 .project-card__badge {
   position: absolute;
